@@ -5,6 +5,8 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
 
-module.exports = nextConfig
+  trailingSlash: true,
+};
+
+module.exports = nextConfig;
