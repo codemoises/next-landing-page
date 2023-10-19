@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "storybook": "storybook dev -p 6006 -s ./public",
     "build-storybook": "storybook build",

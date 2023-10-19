@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/GridText/GridText.test.js", "src/pages/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/GridText/GridText.test.js", "src/pages/index.tsx", "src/pages/_document.tsx", "src/pages/_app.tsx"],
   "exclude": ["node_modules"]
 }
