@@ -1,5 +1,6 @@
 import P from 'prop-types';
 import Head from 'next/head';
+
 import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
 import { GridTwoColumn } from '../../components/GridTwoColumn';
