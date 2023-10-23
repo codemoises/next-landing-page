@@ -1,5 +1,6 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
+import '@testing-library/jest-dom';
 import { GoTop } from '.';
 
 describe('<GoTop />', () => {

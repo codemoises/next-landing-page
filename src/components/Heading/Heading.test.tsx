@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { ThemeProvider } from 'styled-components';
 import { Heading } from '.';
 import { renderTheme } from '../../styles/render-theme';
