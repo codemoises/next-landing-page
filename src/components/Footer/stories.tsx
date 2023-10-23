@@ -1,4 +1,5 @@
-import { Footer } from '.';
+import { Meta, Story } from '@storybook/react';
+import { Footer, FooterProps } from '.';
 
 export default {
   title: 'Footer',
@@ -6,9 +7,9 @@ export default {
   args: {
     footerHtml: `<p><a href="https://bio-tau.vercel.app/">Feito por Moises Cruz Braga</a></p>`,
   },
-};
+} as Meta;
 
-export const Template = (args) => {
+export const Template: Story<FooterProps> = (args) => {
   return (
     <div>
       <Footer {...args} />
