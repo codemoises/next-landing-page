@@ -16,7 +16,7 @@ export const Container = styled.a`
       left: 50%;
       width: 0;
       height: 0.2rem;
-      background-color: ${theme.colors.secondaryColor};
+      background: ${theme.colors.secondaryColor};
       transition: all 300ms ease-in-out;
     }
 
