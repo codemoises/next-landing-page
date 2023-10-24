@@ -1,6 +1,3 @@
-const a = 1;
-a;
-
 import config from '../config';
 import { mapData } from './map-data';
 
