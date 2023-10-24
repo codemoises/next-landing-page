@@ -1,8 +1,9 @@
 import { GridTwoColumn } from '.';
-import { mock } from './mock';
+
+import mock from './mock';
 
 export default {
-  title: 'GridTwoColumn',
+  title: 'GridTwoColumns',
   component: GridTwoColumn,
   args: mock,
   argTypes: {
