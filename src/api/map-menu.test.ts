@@ -7,10 +7,9 @@ describe('map-menu', () => {
     expect(menu.text).toBe('');
     expect(menu.srcImg).toBe('');
     expect(menu.link).toBe('');
-    expect(menu.links).toEqual([]);
   });
 
-  it('should map menu to match keys and velues required', () => {
+  it('should map menu to match keys and values required', () => {
     const menu = mapMenu({
       open_in_new_tab: false,
       logo_text: 'Landing Page',

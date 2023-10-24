@@ -5,6 +5,7 @@ import {
   mapSectionTwoColumns,
   mapTextGrid,
 } from './map-sections';
+
 import pagesFakeData from './dados.json';
 
 describe('map-sections', () => {
@@ -25,14 +26,14 @@ describe('map-sections', () => {
       },
     ]);
 
-    const withNoComponent = mapSections([{}]);
+    const WithNoComponent = mapSections([{}]);
     expect(withNoTextOrImageGrid).toEqual([
       { __component: 'section.section-grid' },
     ]);
-    expect(withNoComponent).toEqual([{}]);
+    expect(WithNoComponent).toEqual([{}]);
   });
 
-  it('should test section.section-grid with no text_grid or no image_grid', () => {
+  it('should test section.section-grid with no text_grid or image_grid', () => {
     const withNoTextOrImageGrid = mapSections([
       {
         __component: 'section.section-grid',
@@ -46,7 +47,7 @@ describe('map-sections', () => {
     expect(withNoTextOrImageGrid.length).toBe(2);
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns if data is empty', () => {
     const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
     expect(data.component).toBe('');
@@ -56,7 +57,7 @@ describe('map-sections', () => {
     expect(data.title).toBe('');
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns with data', () => {
     const data = mapSectionTwoColumns({
       __component: 'section.section-two-columns',
       title: 'title',

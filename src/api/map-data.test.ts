@@ -8,7 +8,7 @@ describe('map-data', () => {
     expect(pagesData.title).toBe('');
   });
 
-  it('should map data even if there are data', () => {
+  it('should map data if there are data', () => {
     const pagesData = mapData([
       {
         footer_text: '<p>Hey</p>',
