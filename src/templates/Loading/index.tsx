@@ -1,5 +1,5 @@
 import * as Styled from './styles';
 
-export const Loanding = () => {
+export const Loading = () => {
   return <Styled.Container />;
 };
